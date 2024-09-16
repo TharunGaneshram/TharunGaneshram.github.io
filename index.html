@@ -1,1 +1,223 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun Ganeshram - Firmware Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #04054a;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header h1 {
+            margin: 10px 0;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #0066cc;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-info a:hover {
+            background-color: #004999;
+        }
+        section {
+            padding: 50px 10%;
+        }
+        .project {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 100%;
+        }
+        .project img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            margin-left: 20px;
+            flex-shrink: 0;
+        }
+        .project-content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .project h2 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+        .project p {
+            line-height: 1.6;
+        }
+        .project .technologies, .project .skills {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/profile_picture.jpg" alt="Profile Picture">
+    <h1>Tharun Ganeshram</h1>
+    <p>University of Waterloo - Systems Design Engineering</p>
+    <div class="contact-info">
+        <a href="mailto:tganeshr@uwaterloo.ca">Email</a>
+        <a href="https://linkedin.com/in/tharun-ganeshram" target="_blank">LinkedIn</a>
+        <a href="https://github.com/TharunGaneshram" target="_blank">GitHub</a>
+        <span>Phone: (613) 408-3317</span>
+    </div>
+</header>
+
+<section id="projects">
+    <div class="project">
+        <div class="project-content">
+            <h2>Real Time Mimic Robotic Hand</h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> STM32, ESP32, TensorFlow, 3D Printing, Stepper Motors
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> Real-Time Control, Motor Synchronization, Object Detection, CAD Design
+            </div>
+            <p>This project features a <strong>robotic hand</strong> controlled by five <strong>stepper motors</strong>, each corresponding to a finger, with input from an object detection system powered by <strong>TensorFlow</strong>. The <strong>STM32</strong> microcontroller handles the motor control, while the <strong>ESP32</strong> manages Bluetooth communication with a laptop running the object detection model on <strong> OpenCV </strong> webcam input. CAD software was used to design the robotic hand components, which were then 3D printed. The project merges several firmware technologies, from real-time motor control using <strong>PWM</strong> and <strong>UART communication</strong>, to machine learning for gesture detection and mimicry. This unique combination of mechanical design, embedded systems, and machine learning provided a comprehensive learning experience, emphasizing how multiple domains interact to create complex, responsive systems.</p>
+        </div>
+        <img src="images/robotic_hand.jpg" alt="Robotic Hand Screenshot">
+    </div>
+
+    <div class="project">
+        <div class="project-content">
+            <h2>FreeRTOS Hyperloop Pod</h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> FreeRTOS, CMSIS-RTOS2, STM32, CAN, PWM
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> RTOS Design, Task Management, Embedded Systems, Real-Time Control
+            </div>
+            <p>As part of the Waterloo Hyperloop design team, I re-architected the entire system using <strong>FreeRTOS</strong> and the <strong>CMSIS-RTOS2</strong> API. FreeRTOS, an open-source real-time operating system, provided an environment for managing multiple tasks concurrently on <strong>STM32</strong> microcontrollers. I implemented the RTOS for three critical modules: Sensor Module, Motor Controller Module, and Battery Management System (BMS). The <strong>Sensor Module</strong> handled data from pressure sensors, IMUs, and MUXes with dedicated threads and CAN communication. The <strong>Motor Controller Module</strong> included FIFO management and tasks for processing motor commands, speed control, and emergency functions, with a CAN thread for data handling. The <strong>BMS</strong> module monitored battery metrics, utilized PWM for cell balancing, and managed thermistors for thermal control. This project showcased my ability to integrate RTOS functionalities into complex embedded systems, enhancing real-time task management and system efficiency.</p>
+        </div>
+        <img src="images/Hyperloop_Architechture.png" alt="FreeRTOS Hyperloop Pod Screenshot">
+    </div>    
+
+    <div class="project">
+        <div class="project-content">
+            <h2>Omni-Directional Bluetooth Car</h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> ESP32, STM32, UART, Bluetooth, PWM
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> Real-Time Control, Data Communication, PWM Signals, Bluetooth Integration
+            </div>
+            <p>The <strong>Omni-Directional Bluetooth Car</strong> project was designed to explore real-time vehicle control using Bluetooth communication. The car features one powered pivot wheel and three support pivot wheels, controlled using an <strong>ESP32</strong> for Bluetooth communication and an <strong>STM32</strong> microcontroller for vehicle control. Input data is transferred over <strong>UART</strong>, split into speed and direction values, and used to adjust <strong>PWM signals</strong> for dynamic motion control. This project deepened my knowledge of wireless communication protocols, real-time control in embedded systems, and the effective use of PWM for motor control. Additionally, this project showcased the ability to build hardware-software systems that react to external commands in real-time, a key requirement for firmware engineers developing communication-driven systems.</p>
+        </div>
+        <img src="images/car_base.png" alt="Omni-Directional Car Base CAD SC">
+    </div>
+
+    <div class="project">
+        <div class="project-content">
+            <h2>DroneCAN Servo Motor Controls</h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> STM32, DroneCAN, Pixhawk, PWM, C
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> Real-Time Communication, Servo Control, Signal Processing, Debugging
+            </div>
+            <p>As part of the <strong>Waterloo Aerial Robotics Group</strong>, I architected the integration of <strong>DroneCAN</strong> with an <strong>STM32</strong> microcontroller, enabling real-time communication and control between a Pixhawk flight controller and servos. The project involved decoding DroneCAN messages, specifically extracting servo commands and converting them to <strong>PWM</strong> signals for motor control. By establishing this integration, I successfully controlled four servo motors, improving the drone’s <strong>balancing, control, and maneuverability</strong>. Extensive debugging and testing were crucial to ensure reliable communication between the Pixhawk and STM32, eliminating signal noise. This project demonstrated my expertise in real-time embedded systems, efficient data handling, and precise motor control, providing a robust solution for drone signal transmission.</p>
+        </div>
+        <img src="images/drone.jpg" alt="DroneCAN STM32 Integration Screenshot">
+    </div>    
+
+    <div class="project">
+        <div class="project-content">
+            <h2>5-Bar Pick and Place Mechanism</h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> Arduino, Botboarduino, Servo Motors, Serial Communication
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> Servo Control, Smooth Movement, Payload Manipulation, Embedded Systems
+            </div>
+            <p>This project involves the development of a <strong>5-bar pick-and-place mechanism</strong> controlled by a <strong>Botboarduino</strong> microcontroller. The system uses servo motors for axis and gripper control, enabling smooth and precise movement of payloads. The firmware developed incorporates direct manipulation of servos through <strong>digital pins</strong>, which communicate serially with an external controller. This project strengthened my understanding of motor control via embedded systems, where precise timing and smooth transitions between positions are crucial. Writing firmware for servo control and implementing a basic <strong>serial communication protocol</strong> highlighted how embedded systems handle real-world mechanical tasks, such as automated manufacturing or robotics, skills that will apply to any firmware position focused on automation or robotic systems.</p>
+        </div>
+        <img src="images/pick_n_place.jpg" alt="5-Bar Mechanism Screenshot">
+    </div>
+
+    <div class="project">
+        <div class="project-content">
+            <h2>Real-Time Object Recognition Model</h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> TensorFlow, OpenCV, Python, Unsupervised Learning
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> Machine Learning, Real-Time Processing, Model Training, Image Recognition
+            </div>
+            <p>This project involved implementing an <strong>object recognition</strong> system using <strong>TensorFlow</strong> and <strong>OpenCV</strong>. By training an unsupervised machine learning model, the system was able to accurately identify objects in live video streams. Key technical skills include setting up and training the <strong>TensorFlow Object Detection API</strong>, integrating <strong>OpenCV</strong> for video processing, and optimizing performance for real-time object detection. The experience of collecting image datasets, dividing them into training and test sets, and evaluating the model using <strong>TensorBoard</strong> provided invaluable insights into the machine learning pipeline. While primarily a software project, the real-time video processing involved has direct applications in embedded systems where sensor data must be processed and analyzed quickly, a skill applicable to firmware development in systems with camera-based inputs or vision sensors.</p>
+        </div>
+        <img src="images/TFOD_TEST.png" alt="Real-Time Object Recognition App Screenshot">
+    </div>
+    
+    <div class="project">
+        <div class="project-content">
+            <h2>4D Chess Game</h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> Java, C++, Object-Oriented Programming
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> Inheritance, Encapsulation, Algorithm Design, Polymorphism
+            </div>
+            <p>This <strong>4D Chess Game</strong> project was a venture into the complexities of multidimensional board games, implemented in both <strong>Java</strong> and <strong>C++</strong>. The project focused on creating a 4-dimensional chessboard, with individual chess pieces coded as separate classes, each inheriting from a base <strong>ChessPiece</strong> class. Key skills learned include managing polymorphic behavior for chess piece movements and implementing game logic for checking and checkmating conditions. Working with arrays and handling multidimensional spaces helped solidify concepts of memory management and efficient data structures. This project demonstrated how <strong>object-oriented programming</strong> can be applied to manage complex logic in a structured and reusable way, providing a foundation for later projects involving firmware where similar abstraction is necessary.</p>
+        </div>
+        <img src="images/4-D_Chess.jpg" alt="4D Chess Game Screenshot">
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Tharun Ganeshram</p>
+</footer>
+
+</body>
+</html>
