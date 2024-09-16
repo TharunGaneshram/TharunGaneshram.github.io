@@ -123,12 +123,12 @@
         <div class="project-content">
             <h2>Real Time Mimic Robotic Hand</h2>
             <div class="technologies">
-                <strong>Technologies:</strong> STM32, ESP32, TensorFlow, 3D Printing, Stepper Motors
+                <strong>Technologies:</strong> STM32, ESP32, TensorFlow, OpenCV, SolidWorks, Stepper Motors
             </div>
             <div class="skills">
-                <strong>Key Skills:</strong> Real-Time Control, Motor Synchronization, Object Detection, CAD Design
+                <strong>Key Skills:</strong> PWM, UART, Real-Time Control, Motor Synchronization, Object Detection, CAD Design
             </div>
-            <p>This project features a <strong>robotic hand</strong> controlled by five <strong>stepper motors</strong>, each corresponding to a finger, with input from an object detection system powered by <strong>TensorFlow</strong>. The <strong>STM32</strong> microcontroller handles the motor control, while the <strong>ESP32</strong> manages Bluetooth communication with a laptop running the object detection model on <strong> OpenCV </strong> webcam input. CAD software was used to design the robotic hand components, which were then 3D printed. The project merges several firmware technologies, from real-time motor control using <strong>PWM</strong> and <strong>UART communication</strong>, to machine learning for gesture detection and mimicry. This unique combination of mechanical design, embedded systems, and machine learning provided a comprehensive learning experience, emphasizing how multiple domains interact to create complex, responsive systems.</p>
+            <p>This project features a <strong>robotic hand</strong> controlled by five <strong>stepper motors</strong>, each corresponding to a finger, with input from an object detection system powered by <strong>TensorFlow</strong>. The <strong>STM32</strong> microcontroller handles the motor control, while the <strong>ESP32</strong> manages Bluetooth communication with a laptop running the object detection model on <strong> OpenCV </strong> webcam input. CAD software was used to design the robotic hand components, which were then 3D printed. The project merges several technologies, from real-time motor control using <strong>PWM</strong> and <strong>UART communication</strong>, to machine learning for gesture detection and mimicry. This unique combination of mechanical design, embedded systems, and machine learning provided a comprehensive learning experience, emphasizing how multiple domains interact to create complex, responsive systems.</p>
         </div>
         <img src="images/robotic_hand.jpg" alt="Robotic Hand Screenshot">
     </div>
@@ -137,12 +137,12 @@
         <div class="project-content">
             <h2>FreeRTOS Hyperloop Pod</h2>
             <div class="technologies">
-                <strong>Technologies:</strong> FreeRTOS, CMSIS-RTOS2, STM32, CAN, PWM
+                <strong>Technologies:</strong> FreeRTOS, CMSIS-RTOS2, STM32, Raspberry Pi
             </div>
             <div class="skills">
-                <strong>Key Skills:</strong> RTOS Design, Task Management, Embedded Systems, Real-Time Control
+                <strong>Key Skills:</strong> RTOS Design, Task Management, Embedded Systems, Real-Time Control, CAN
             </div>
-            <p>As part of the Waterloo Hyperloop design team, I re-architected the entire system using <strong>FreeRTOS</strong> and the <strong>CMSIS-RTOS2</strong> API. FreeRTOS, an open-source real-time operating system, provided an environment for managing multiple tasks concurrently on <strong>STM32</strong> microcontrollers. I implemented the RTOS for three critical modules: Sensor Module, Motor Controller Module, and Battery Management System (BMS). The <strong>Sensor Module</strong> handled data from pressure sensors, IMUs, and MUXes with dedicated threads and CAN communication. The <strong>Motor Controller Module</strong> included FIFO management and tasks for processing motor commands, speed control, and emergency functions, with a CAN thread for data handling. The <strong>BMS</strong> module monitored battery metrics, utilized PWM for cell balancing, and managed thermistors for thermal control. This project showcased my ability to integrate RTOS functionalities into complex embedded systems, enhancing real-time task management and system efficiency.</p>
+            <p>As part of the Waterloo Hyperloop design team, I re-architected their entire firmware system using <strong>FreeRTOS</strong> and the <strong>CMSIS-RTOS2</strong> API. Using FreeRTOS as an environment for managing multiple tasks concurrently on the <strong>STM32</strong> microcontrollers, I implemented the RTOS for three critical modules: Sensor Module, Motor Controller Module, and Battery Management System (BMS). The <strong>Sensor Module</strong> handled data from pressure sensors, IMUs, and MUXes with dedicated threads and sent this data to the Raspberry Pi through CAN. The <strong>Motor Controller Module</strong> included FIFO management and tasks for processing motor commands, speed control, and emergency functions, with a CAN thread for data handling. The <strong>BMS</strong> module monitored battery metrics, utilized PWM for cell balancing, and polled thermistors for multi-fan thermal control. This project showcased my ability to integrate RTOS functionalities into complex embedded systems, enhancing real-time task management and system efficiency.</p>
         </div>
         <img src="images/Hyperloop_Architechture.png" alt="FreeRTOS Hyperloop Pod Screenshot">
     </div>    
@@ -151,12 +151,12 @@
         <div class="project-content">
             <h2>Omni-Directional Bluetooth Car</h2>
             <div class="technologies">
-                <strong>Technologies:</strong> ESP32, STM32, UART, Bluetooth, PWM
+                <strong>Technologies:</strong> ESP32, STM32, Bluetooth, SolidWorks
             </div>
             <div class="skills">
-                <strong>Key Skills:</strong> Real-Time Control, Data Communication, PWM Signals, Bluetooth Integration
+                <strong>Key Skills:</strong> Real-Time Control, UART, PWM, Wireless Communication, CAD Design
             </div>
-            <p>The <strong>Omni-Directional Bluetooth Car</strong> project was designed to explore real-time vehicle control using Bluetooth communication. The car features one powered pivot wheel and three support pivot wheels, controlled using an <strong>ESP32</strong> for Bluetooth communication and an <strong>STM32</strong> microcontroller for vehicle control. Input data is transferred over <strong>UART</strong>, split into speed and direction values, and used to adjust <strong>PWM signals</strong> for dynamic motion control. This project deepened my knowledge of wireless communication protocols, real-time control in embedded systems, and the effective use of PWM for motor control. Additionally, this project showcased the ability to build hardware-software systems that react to external commands in real-time, a key requirement for firmware engineers developing communication-driven systems.</p>
+            <p>The <strong>Omni-Directional Bluetooth Car</strong> project was designed to explore real-time vehicle control using Bluetooth communication. The car features one powered pivot wheel and three support pivot wheels, controlled using an <strong>ESP32</strong> for Bluetooth communication and an <strong>STM32</strong> microcontroller for vehicle control. Input data is transferred over <strong>UART</strong>, split into speed and direction values, and used to adjust <strong>PWM signals</strong> for dynamic motion control. This project gave me hands-on experience with wireless communication, real-time control in embedded systems, and the effective use of PWM for motor control. Additionally, this project allowed me to play around with SolidWorks as well as see the end-to-end hardware-software integration of a system that reacts to external commands in real-time.</p>
         </div>
         <img src="images/car_base.png" alt="Omni-Directional Car Base CAD SC">
     </div>
@@ -165,12 +165,12 @@
         <div class="project-content">
             <h2>DroneCAN Servo Motor Controls</h2>
             <div class="technologies">
-                <strong>Technologies:</strong> STM32, DroneCAN, Pixhawk, PWM, C
+                <strong>Technologies:</strong> STM32, Pixhawk, C
             </div>
             <div class="skills">
-                <strong>Key Skills:</strong> Real-Time Communication, Servo Control, Signal Processing, Debugging
+                <strong>Key Skills:</strong> DroneCAN, PWM, Signal Processing, Signal Debugging
             </div>
-            <p>As part of the <strong>Waterloo Aerial Robotics Group</strong>, I architected the integration of <strong>DroneCAN</strong> with an <strong>STM32</strong> microcontroller, enabling real-time communication and control between a Pixhawk flight controller and servos. The project involved decoding DroneCAN messages, specifically extracting servo commands and converting them to <strong>PWM</strong> signals for motor control. By establishing this integration, I successfully controlled four servo motors, improving the drone’s <strong>balancing, control, and maneuverability</strong>. Extensive debugging and testing were crucial to ensure reliable communication between the Pixhawk and STM32, eliminating signal noise. This project demonstrated my expertise in real-time embedded systems, efficient data handling, and precise motor control, providing a robust solution for drone signal transmission.</p>
+            <p>As part of the <strong>Waterloo Aerial Robotics Group</strong>, I architected the integration of <strong>DroneCAN</strong> with an <strong>STM32</strong> microcontroller, enabling real-time communication and control between a <strong> Pixhawk</strong> flight controller and servos. The project involved decoding DroneCAN messages, specifically extracting servo commands and converting them to <strong>PWM</strong> signals for motor control. By establishing this integration, I successfully controlled four servo motors, improving the drone’s <strong>balancing, control, and maneuverability</strong>. Extensive debugging and testing were crucial to ensure reliable communication between the Pixhawk and STM32, eliminating signal noise with differential communication. This project expanded my expertise in working with a largely abstracted real-time embedded system, efficient data handling, and precise motor control, providing a robust solution for drone signal transmission.</p>
         </div>
         <img src="images/drone.jpg" alt="DroneCAN STM32 Integration Screenshot">
     </div>    
@@ -184,7 +184,7 @@
             <div class="skills">
                 <strong>Key Skills:</strong> Servo Control, Smooth Movement, Payload Manipulation, Embedded Systems
             </div>
-            <p>This project involves the development of a <strong>5-bar pick-and-place mechanism</strong> controlled by a <strong>Botboarduino</strong> microcontroller. The system uses servo motors for axis and gripper control, enabling smooth and precise movement of payloads. The firmware developed incorporates direct manipulation of servos through <strong>digital pins</strong>, which communicate serially with an external controller. This project strengthened my understanding of motor control via embedded systems, where precise timing and smooth transitions between positions are crucial. Writing firmware for servo control and implementing a basic <strong>serial communication protocol</strong> highlighted how embedded systems handle real-world mechanical tasks, such as automated manufacturing or robotics, skills that will apply to any firmware position focused on automation or robotic systems.</p>
+            <p>This project involves the development of a <strong>5-bar pick-and-place mechanism</strong> controlled by a <strong>Botboarduino</strong> microcontroller. The system uses servo motors for axis and gripper control, enabling smooth and precise movement of payloads. The firmware developed incorporates direct manipulation of servos through <strong>digital pins</strong>, which communicate serially with an external controller. This project helped build my foundation in motor control in embedded systems, where precise timing and smooth transitions between positions are crucial. Writing firmware for servo control and implementing a basic <strong>serial communication protocol</strong> showed me how embedded systems handle real-world mechanical tasks, such as automated manufacturing or robotics.</p>
         </div>
         <img src="images/pick_n_place.jpg" alt="5-Bar Mechanism Screenshot">
     </div>
@@ -198,7 +198,7 @@
             <div class="skills">
                 <strong>Key Skills:</strong> Machine Learning, Real-Time Processing, Model Training, Image Recognition
             </div>
-            <p>This project involved implementing an <strong>object recognition</strong> system using <strong>TensorFlow</strong> and <strong>OpenCV</strong>. By training an unsupervised machine learning model, the system was able to accurately identify objects in live video streams. Key technical skills include setting up and training the <strong>TensorFlow Object Detection API</strong>, integrating <strong>OpenCV</strong> for video processing, and optimizing performance for real-time object detection. The experience of collecting image datasets, dividing them into training and test sets, and evaluating the model using <strong>TensorBoard</strong> provided invaluable insights into the machine learning pipeline. While primarily a software project, the real-time video processing involved has direct applications in embedded systems where sensor data must be processed and analyzed quickly, a skill applicable to firmware development in systems with camera-based inputs or vision sensors.</p>
+            <p>This project involved implementing an <strong>object recognition</strong> system using <strong>TensorFlow</strong> and <strong>OpenCV</strong>. By training an unsupervised machine learning model, the system was able to accurately identify objects in live video streams. Key technical skills include setting up and training the <strong>TensorFlow Object Detection API</strong>, integrating <strong>OpenCV</strong> for video processing, and optimizing performance for real-time object detection. The experience of collecting image datasets, dividing them into training and test sets, and evaluating the model using <strong>TensorBoard</strong> provided invaluable insights into the machine learning pipeline.</p>
         </div>
         <img src="images/TFOD_TEST.png" alt="Real-Time Object Recognition App Screenshot">
     </div>
@@ -212,7 +212,7 @@
             <div class="skills">
                 <strong>Key Skills:</strong> Inheritance, Encapsulation, Algorithm Design, Polymorphism
             </div>
-            <p>This <strong>4D Chess Game</strong> project was a venture into the complexities of multidimensional board games, implemented in both <strong>Java</strong> and <strong>C++</strong>. The project focused on creating a 4-dimensional chessboard, with individual chess pieces coded as separate classes, each inheriting from a base <strong>ChessPiece</strong> class. Key skills learned include managing polymorphic behavior for chess piece movements and implementing game logic for checking and checkmating conditions. Working with arrays and handling multidimensional spaces helped solidify concepts of memory management and efficient data structures. This project demonstrated how <strong>object-oriented programming</strong> can be applied to manage complex logic in a structured and reusable way, providing a foundation for later projects involving firmware where similar abstraction is necessary.</p>
+            <p>This <strong>4D Chess Game</strong> project was a venture into the complexities of multidimensional board games, implemented in both <strong>Java</strong> and <strong>C++</strong>. The project focused on creating a 4-dimensional chessboard, with individual chess pieces coded as separate classes, each inheriting from a base <strong>ChessPiece</strong> class. It helped me build skills in managing polymorphic behavior for chess piece movements and implementing game logic for checking and checkmating conditions. Working with complex multidimensional arrays and classes helped solidify my understanding of memory management and efficient data structures. This project showed me how <strong>object-oriented programming</strong> can be applied to manage complex logic in a structured and reusable way.</p>
         </div>
         <img src="images/4-D_Chess.jpg" alt="4D Chess Game Screenshot">
     </div>
