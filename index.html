@@ -118,7 +118,7 @@
     <h1>Tharun Ganeshram</h1>
     <p id="info">University of Waterloo - Systems Design Engineering</p>
     <div class="contact-info">
-        <a href="Tharun_Fall_2025_ML.pdf" target="_blank" download>Resume</a>
+        <a href="Tharun_Summer_2025_FW.pdf" target="_blank" download>Resume</a>
         <a href="mailto:tganeshr@uwaterloo.ca">Email</a>
         <a href="https://linkedin.com/in/tharun-ganeshram" target="_blank">LinkedIn</a>
         <a href="https://github.com/TharunGaneshram" target="_blank">GitHub</a>
@@ -138,6 +138,20 @@
             <p>As part of the <strong>Waterloo Hyperloop design team</strong>, I re-architected their entire firmware system using <strong>FreeRTOS</strong> and the <strong>CMSIS-RTOS2</strong> API. Using FreeRTOS as an environment for managing multiple tasks concurrently on the <strong>STM32</strong> microcontrollers, I implemented the RTOS for three critical modules: Sensor Module, Motor Controller Module, and Battery Management System (BMS). The <strong>Sensor Module</strong> handled data from pressure sensors, IMUs, and MUXes with dedicated threads and sent this data to the Raspberry Pi through CAN. The <strong>Motor Controller Module</strong> included FIFO management and tasks for processing motor commands, speed control, and emergency functions, with a CAN thread for data handling. The <strong>BMS</strong> module monitored battery metrics, utilized PWM for cell balancing, and polled thermistors for multi-fan thermal control. This project showcased my ability to integrate RTOS functionalities into complex embedded systems, enhancing real-time task management and system efficiency.</p>
         </div>
         <img src="images/Hyperloop_Architechture.png" alt="FreeRTOS Hyperloop Pod Screenshot">
+    </div>
+
+    <div class="project">
+        <div class="project-content">
+            <h2><a href="https://github.com/TharunGaneshram/System_Monitor_Dynamic_Resource_Manager" target="_blank">Autonomous System Monitor & Dynamic Resource Manager</a></h2>
+            <div class="technologies">
+                <strong>Technologies:</strong> Linux Kernel, Embedded C, Sysfs, Character Device, HRTimer, Workqueue
+            </div>
+            <div class="skills">
+                <strong>Key Skills:</strong> Kernel Programming, Resource Management, Synchronization, Device Driver Dev.
+            </div>
+            <p>This project is a <strong>Linux kernel module</strong> that simulates an autonomous system monitor and dynamic resource manager, similar to a task manager at the kernel level. It periodically assesses a simulated system workload using a <strong>high-resolution timer (HRTimer)</strong>, dynamically adjusts a resource allocation factor, and tracks critical alerts. The module exposes its state and allows workload injection via both a <strong>character device</strong> and the <strong>Sysfs interface</strong>. Key features include simulated metrics for system workload, temperature, and memory pressure, dynamic resource adjustment logic, and synchronization using spinlocks and mutexes. This project was my introduction to kernel-space programming, device driver interfaces, and concurrent systems, providing me with hands-on experience in Linux kernel tools and debugging via <strong>dmesg</strong>.</p>
+        </div>
+        <img src="images/system_monitor_kernel_module.png" alt="Autonomous System Monitor Kernel Module Screenshot">
     </div>
     
     <div class="project">
